@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "340923691809",
+    "firebase_url": "https://drswipefbt-default-rtdb.firebaseio.com",
+    "project_id": "drswipefbt",
+    "storage_bucket": "drswipefbt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340923691809:android:c81d1ced88ca506002c460",
+        "android_client_info": {
+          "package_name": "com.example.drswipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340923691809-36lg02kipqc94gc323e12gl62fqjqvtg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drswipe",
+            "certificate_hash": "7d2bf5b1639a76d18b6af34044cde068f7e6da79"
+          }
+        },
+        {
+          "client_id": "340923691809-rsddlrj3tcbk8rfhm99cauum0itl782r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzbCxeMFOyX5X3-7TQSMiRKHjt8WfRBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340923691809-rsddlrj3tcbk8rfhm99cauum0itl782r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

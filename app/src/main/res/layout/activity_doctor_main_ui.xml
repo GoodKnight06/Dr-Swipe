@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DoctorMainUI">
+
+    <TextView
+        android:id="@+id/doctorclinicView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clinic"
+        android:textColor="#000000"
+        android:background="#9090C4"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorbar"
+        app:layout_constraintStart_toStartOf="@+id/doctorcompletenameView" />
+
+    <TextView
+        android:id="@+id/doctorcompletenameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Doctor"
+        android:textColor="#000000"
+        android:background="#9090C4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/doctorbar" />
+
+    <Button
+        android:id="@+id/logoutbutt_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="LOG OUT"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/doctorbar" />
+
+    <ProgressBar
+        android:id="@+id/doctorbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PSHTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Patients Seeking Help"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorclinicView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/PSHView"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PSHTitleView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

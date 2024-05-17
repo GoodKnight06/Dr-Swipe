@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/patient_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="Full Name ng. Patient"
+            android:textColor="#673AB7"
+            android:textIsSelectable="true"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/patient_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Details ng Patient"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/patient_fullname"/>
+
+        <ToggleButton
+            android:id="@+id/patientMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/patient_fullname"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:text="PENDING"
+            android:textOff="PENDING"
+            android:textOn="TREATED" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
